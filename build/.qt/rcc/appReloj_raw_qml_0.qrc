@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/Reloj/">
-    <file alias="qml/main.qml">/home/yeru/Documentos/Dev/reloj-qt6/qml/main.qml</file>
-  </qresource>
-</RCC>
-

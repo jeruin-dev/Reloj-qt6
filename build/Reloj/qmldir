@@ -1,5 +1,0 @@
-module Reloj
-typeinfo appReloj.qmltypes
-prefer :/Reloj/
-depends QtQuick
-

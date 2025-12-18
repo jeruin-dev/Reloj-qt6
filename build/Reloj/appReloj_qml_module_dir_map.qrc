@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/">
-    <file alias="/Reloj">/home/yeru/Documentos/Dev/reloj-qt6/build/Reloj</file>
-
-  </qresource>
-</RCC>
