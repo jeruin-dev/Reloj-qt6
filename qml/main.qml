@@ -15,5 +15,6 @@ Window {
         font.pixelSize: 24
         font.family: "JetBrains Mono"
         font.italic: true
+        objectName: "miTexto"
     }
 }

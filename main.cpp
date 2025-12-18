@@ -40,5 +40,14 @@ int main(int argc, char *argv[])
 
     engine.load(url);
 
+
+    QObject* root = engine.rootObjects().first();
+
+    QObject* miTexto = root->findChild<QObject*>("miTexto");
+
+    if (miTexto) {
+        miTexto->setProperty("text","Hola desde C++");
+    }
+
     return app.exec();
 }
