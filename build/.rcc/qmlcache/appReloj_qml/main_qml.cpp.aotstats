@@ -1,0 +1,23 @@
+{
+    "formatRevision": 1,
+    "modules": [
+        {
+            "moduleFiles": [
+                {
+                    "entries": [
+                        {
+                            "codegenResult": 0,
+                            "column": 27,
+                            "durationMicroseconds": 162,
+                            "functionName": "centerIn",
+                            "line": 13,
+                            "message": ""
+                        }
+                    ],
+                    "filePath": "/home/yeru/Documentos/Dev/reloj-qt6/qml/main.qml"
+                }
+            ],
+            "moduleId": "Reloj(appReloj)"
+        }
+    ]
+}

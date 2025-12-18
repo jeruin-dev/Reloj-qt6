@@ -1,0 +1,5 @@
+--resource
+/home/yeru/Documentos/Dev/reloj-qt6/build/.qt/rcc/qmake_Reloj.qrc
+--resource
+/home/yeru/Documentos/Dev/reloj-qt6/build/.qt/rcc/appReloj_raw_qml_0.qrc
+/Reloj/qml/main.qml
