@@ -9,12 +9,15 @@ Window {
 
     title: qsTr("Reloj")
 
-    Text {
+    Button {
         anchors.centerIn: parent
-        text: "Hola Mundo!"
+        text: "Precioname"
         font.pixelSize: 24
         font.family: "JetBrains Mono"
         font.italic: true
-        objectName: "miTexto"
+        objectName: "miButon"
+        onClicked: {
+            backend.hola();
+        }
     }
 }

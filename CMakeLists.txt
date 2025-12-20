@@ -8,12 +8,13 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-find_package(Qt6 6.2 COMPONENTS Quick REQUIRED)
+find_package(Qt6 6.2 COMPONENTS Quick Widgets REQUIRED)
 
 qt_standard_project_setup()
 
 qt_add_executable(appReloj
     main.cpp
+    src/backend.cpp
 )
 
 qt_add_qml_module(appReloj
@@ -23,4 +24,5 @@ qt_add_qml_module(appReloj
 )
 
 target_link_libraries(appReloj
-    PRIVATE Qt6::Quick)
+    PRIVATE Qt6::Quick Qt6::Widgets
+)

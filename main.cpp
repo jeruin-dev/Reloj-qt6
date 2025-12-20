@@ -7,10 +7,18 @@
 #include <QTranslator>
 
 #include <QQuickView>
-
+#include <QPushButton>
 #include <iostream>
-#include <qobject.h>
 
+#include "src/backend.hpp"
+
+#include <qdebug.h>
+#include <qlogging.h>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qpushbutton.h>
+#include <QDebug>
+#include <qtmetamacros.h>
 int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
@@ -38,16 +46,11 @@ int main(int argc, char *argv[])
         },
         Qt::QueuedConnection);
 
+    Backend backend;
+    engine.rootContext()->setContextProperty("backend", &backend);
+
     engine.load(url);
 
-
-    QObject* root = engine.rootObjects().first();
-
-    QObject* miTexto = root->findChild<QObject*>("miTexto");
-
-    if (miTexto) {
-        miTexto->setProperty("text","Hola desde C++");
-    }
 
     return app.exec();
 }
